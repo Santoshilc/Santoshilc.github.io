@@ -6,6 +6,7 @@ div{
 margin: auto;
 text-align: center;
 text-shadow: 1px 1px 1px rgb(0, 0, 0);
+font-size: 1.5rem;
 
 width: 250px;
 height: 200px;
@@ -14,6 +15,7 @@ border-radius: 10px;
 
 color: #ffffff;
 background-color: rgba(249, 0, 0, 0.904);
+box-shadow:2px 2px 5px rgb(0, 0, 0),inset 2px 2px 4px rgb(255, 254, 254),inset - 2px -2px 4px rgb(0, 0, 0);
   }
 
 
