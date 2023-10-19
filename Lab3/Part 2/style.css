@@ -1,6 +1,7 @@
 html {
   font-family: sans-serif;
 }
+
 div{
 margin: auto;
 text-align: center;
@@ -10,11 +11,11 @@ width: 250px;
 height: 200px;
 border: 1px solid rgb(163, 16, 16);
 border-radius: 10px;
-box-shadow:2px 2px 5px rgb(0, 0, 0),inset 2px 2px 4px rgb(255, 254, 254),inset - 2px -2px 4px rgb(0, 0, 0);
 
 color: #ffffff;
 background-color: rgba(249, 0, 0, 0.904);
-font-size: 1.5rem;/* 
-}
+  }
+
+
 
 /* Your CSS below here */
