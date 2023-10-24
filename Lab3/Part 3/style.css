@@ -139,3 +139,25 @@ a[href^="http"] {
   background-size: 16px 16px;
   padding-right: 19px;}
 
+
+ul,ol,aside p{
+  margin: auto;
+  line-height: 40px;
+ list-style-type: square;
+
+}
+
+.nav {
+  display: block;
+  padding: 10px;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 800;
+  font-style: italic;
+  line-height: 5em;
+  border: 5px solid #a66;
+  text-align: center;
+  margin-top: 1em;
+}
+
+
+
