@@ -111,3 +111,31 @@ section h2 + p {
   text-indent: 20px;
 }
 
+
+a:link {
+  color: #a66;
+text-decoration: underline;
+outline: none; 
+text-shadow: 1px #a66}
+
+a:visited {
+  color: rgb(225, 86, 5); 
+  outline: none; 
+}
+
+a:focus {
+  color: rgb(45, 43, 187); 
+  outline: none; 
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(192, 70, 70); 
+  text-decoration: none;
+  outline: none; 
+}
+a[href^="http"] {
+  background: url("2863113-200.png") no-repeat 100% 0;
+  background-size: 16px 16px;
+  padding-right: 19px;}
+
