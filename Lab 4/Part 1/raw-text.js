@@ -18,11 +18,25 @@ var inserty = ["the soup kitchen","Disneyland","the White House"];
 
 var insertz = ["spontaneously combusted","melted into a puddle on the sidewalk", "turned into a slug and crawled away"];
 
-
-
 randomize.addEventListener('click', result);
 
 function result() {
+   var finalStory = sillyStory;
+
+var x;
+var y;
+var z;
+
+x = randomValueFromArray(insertx);
+y = randomValueFromArray(inserty);
+z = randomValueFromArray(insertz);
+
+finalStory= finalStory.replace(":insertx:",x);
+finalStory = finalStory.replace(":inserty:",y);
+finalStory = finalStory.replace(":insertz:",z);
+finalStory = finalStory.replace(":insertx:",x);
+
+
 
   if(customName.value !== '') {
     const name = customName.value;
