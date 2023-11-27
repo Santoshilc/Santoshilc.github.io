@@ -12,6 +12,7 @@ const alternativeText = {
   'pic3.jpg' : 'new flowers',
   'pic4.jpg' : 'tomb',
   'pic5.jpg' : 'moth on leaf'
+  
 }
 /* Declaring the alternative text for each image file */
 
