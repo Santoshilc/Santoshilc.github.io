@@ -36,19 +36,19 @@ finalStory = finalStory.replace(":inserty:",y);
 finalStory = finalStory.replace(":insertz:",z);
 finalStory = finalStory.replace(":insertx:",x);
 
+if(customName.value != '') {
+  const name = customName.value;
+  finalStory = finalStory.replace('Bob', name);
+}
 
+if(document.getElementById("uk").checked) {
+ const weightConversion=0.4536
+  var weight = Math.round(300/0.4536)+"kg";
+  var temperature =  Math.round((94-32)*5/9)+' centigrade';
+  finalStory = finalStory.replace("94 farenheit", temperature);  
+  finalStory = finalStory.replace("300 pounds", weight); 
+}
 
-  if(customName.value !== '') {
-    const name = customName.value;
-
-  }
-
-  if(document.getElementById("uk").checked) {
-    const weight = Math.round(300);
-    const temperature =  Math.round(94);
-
-  }
-
-  story.textContent = ;
-  story.style.visibility = 'visible';
+story.textContent = finalStory;
+story.style.visibility = 'visible';
 }
