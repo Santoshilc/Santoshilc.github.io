@@ -29,9 +29,14 @@ for (const imageName of imageArray) {
 }
 
 
-const newImage = document.createElement('img');
-newImage.setAttribute('src', xxx);
-newImage.setAttribute('alt', xxx);
-thumbBar.appendChild(newImage);
-
-/* Wiring up the Darken/Lighten button */
+btn.addEventListener("click", () => {
+    const btnClass = btn.getAttribute("class");
+    if (btnClass === "dark") {
+      btn.setAttribute("class","light");
+      btn.textContent = "CLICK";
+      overlay.style.backgroundColor = 'rgba(0,0,0,0.5)';
+    } else {
+      btn.setAttribute("class","dark");
+     overlay.style.backgroundColor = 'rgba(0,0,0,0)';
+    }
+  });
