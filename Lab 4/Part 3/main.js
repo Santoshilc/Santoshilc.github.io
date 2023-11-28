@@ -19,12 +19,41 @@ function randomRGB() {
 
 // Creating a class named ball so that we can have multiple balls as its object and intilizing some of its properties
 class Ball {
-  constructor(x, y, velX, velY, color, size) {
+  constructor(x, y, velocityX, velocityY, color, size) {
     this.x = x;
     this.y = y;
-    this.velX = velocityX;
-    this.velY = velocityY;
+    this.velocityX = velocityX;
+    this.velocityY = velocityY;
     this.color = color;
     this.size = size;
+  }
+  // Creating a method named draw inside the ball class which will draw a ball object using a html canvas function
+
+  drawball() {
+    ctx.beginPath();
+    ctx.fillStyle = this.color;
+    ctx.arc(this.x, this.y, this.size, 0, 2* Math.PI);
+    ctx.fill();
+  }
+  // creating update method which will return the ball if the touch the screen width edge.
+  update() {
+    if ((this.x + this.size) >= width) {
+      this.velocityX = -(this.velocityX);
+    }
+  
+    if ((this.x - this.size) <= 0) {
+      this.velocityX = -(this.velocityX);
+    }
+  
+    if ((this.y + this.size) >= height) {
+      this.velocityY = -(this.velocityY);
+    }
+  
+    if ((this.y - this.size) <= 0) {
+      this.velocityY = -(this.velocityY);
+    }
+  
+    this.x += this.velocityX;
+    this.y += this.velocityY;
   }
 }
