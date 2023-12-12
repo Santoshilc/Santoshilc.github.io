@@ -71,6 +71,7 @@ p, li, table {
 
 /* || header layout */
 
+
 div[class="nav"], article, footer, .secondary {
   background-color: rgb(138, 207, 138);
 }
@@ -85,7 +86,7 @@ article {
 
 div[class="nav"] {
   height: 50px;
-  background-color: #3498db; /* Adjust the background color to a contrasting color */
+  background-color: #308dcb; /* Adjust the background color to a contrasting color */
   display: flex;
   padding: 1% 0;
   margin-bottom: 10px;
@@ -189,9 +190,8 @@ audio {
 
 /* Comments styling */
 
-.comments {
-  background-color: #def;
-  padding: 10px;
+.comments h3 {
+  font-size: 2rem;
 }
 
 .show-hide {
