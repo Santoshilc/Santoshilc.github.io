@@ -7,7 +7,7 @@ html, body {
 
 html {
   font-size: 10px;
-  background-color: #dde;
+  background-color: #f8f8f8ce;;
 }
 
 body {
@@ -16,11 +16,31 @@ body {
   margin: 0 auto;
 }
 
-/* || typography */
-
-font[size="7"], font[size="6"], font[size="5"] {
+/* Typography */
+h1, h2, h3 {
   font-family: 'Sonsie One', cursive;
-  color: #2a2a2a;
+  color: #333;
+}
+
+h1 {
+  font-size: 4rem;
+  text-align: center;
+  color: white;
+  text-shadow: 2px 2px 10px black;
+}
+
+h2 {
+  font-size: 3rem;
+  text-align: center;
+}
+
+h3 {
+  font-size: 2.2rem;
+}
+
+p, li, table {
+  font-size: 1.6rem;
+  line-height: 1.5;
 }
 
 p, input, li, table, label {
@@ -52,7 +72,7 @@ p, li, table {
 /* || header layout */
 
 div[class="nav"], article, footer, .secondary {
-  background-color: green;
+  background-color: rgb(138, 207, 138);
 }
 
 article, footer, .secondary {
@@ -65,7 +85,7 @@ article {
 
 div[class="nav"] {
   height: 50px;
-  background-color: ff80ff;
+  background-color: #3498db; /* Adjust the background color to a contrasting color */
   display: flex;
   padding: 1% 0;
   margin-bottom: 10px;
@@ -89,8 +109,7 @@ div[class="nav"] a {
   font-size: 2rem;
   text-transform: uppercase;
   text-decoration: none;
-  color: black;
-}
+  color: #fff; /* Change the text color to white or a lighter color */
 
 div[class="nav"] .search {
   flex: 1;
@@ -110,11 +129,9 @@ div[class="nav"] .search {
 }
 
 .search input[type="submit"] {
-  flex: 1;
-  margin-left: 1rem;
   background: #333;
   border: 0;
-  color: white;
+  color: #fff; /* Change the text color to white or a lighter color */
 }
 
 /* || main layout */
